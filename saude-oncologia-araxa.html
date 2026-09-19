@@ -561,12 +561,71 @@ hr.section-hr {
 }
 
 .ig-float:hover { transform: scale(1.08); }
+
+.wpp-float {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--branco);
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+}
+
+.wpp-float:hover { transform: scale(1.08); }
+
+.wpp-float-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--branco);
+  background: rgba(6,14,26,0.85);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 6px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* BANNER — botões lado a lado */
+.ig-banner .botoes-sociais {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wpp-handle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: var(--branco);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 34px;
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(37,211,102,0.35);
+  transition: transform 0.2s ease;
+}
+
+.wpp-handle:hover { transform: translateY(-2px); }
 </style>
 </head>
 <body>
 
-<!-- INSTAGRAM FLUTUANTE -->
+<!-- REDES SOCIAIS FLUTUANTES -->
 <div class="ig-float-wrap">
+  <div class="wpp-float-label">Fale comigo no WhatsApp</div>
+  <a class="wpp-float" href="https://chat.whatsapp.com/KML3SVdovS7BNLhmWQBg1p?s=em&p=a&mlu=4" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.1-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/>
+<path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5-1.3c1.4.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.1c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3C4.2 15 3.7 13.5 3.7 12c0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.3 8.3z"/>
+</svg>
+  </a>
   <div class="ig-float-label">Acompanhe nossos projetos</div>
   <a class="ig-float" href="https://www.instagram.com/leandroguella/" target="_blank" rel="noopener" aria-label="Me siga no Instagram">
     <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -780,13 +839,21 @@ hr.section-hr {
 </svg></div>
       <h3>Quer acompanhar de perto essa proposta?</h3>
       <p>No Instagram eu mostro os bastidores da campanha, converso direto com você e trago outras pautas para Araxá, Tapira e todo o Alto Paranaíba.</p>
-      <a class="ig-handle" href="https://www.instagram.com/leandroguella/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="botoes-sociais">
+        <a class="ig-handle" href="https://www.instagram.com/leandroguella/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="2"/>
 <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
 <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
 </svg> Seguir @leandroguella
-      </a>
+        </a>
+        <a class="wpp-handle" href="https://chat.whatsapp.com/KML3SVdovS7BNLhmWQBg1p?s=em&p=a&mlu=4" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.1-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/>
+<path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5-1.3c1.4.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.1c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3C4.2 15 3.7 13.5 3.7 12c0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.3-8.3 8.3z"/>
+</svg> Entrar no grupo do WhatsApp
+        </a>
+      </div>
     </div>
   </div>
 </section>
